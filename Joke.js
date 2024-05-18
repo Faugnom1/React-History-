@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Joke.css";
+
 
 class Joke extends Component {
   constructor(props) {
@@ -32,14 +32,6 @@ class Joke extends Component {
           <button onClick={this.downVote}>
             <i className="fas fa-thumbs-down" />
           </button>
-
-          <button onClick={this.toggleLock}>
-            <i
-              className={`fas ${this.props.locked ? "fa-unlock" : "fa-lock"}`}
-            />
-          </button>
-
-          {this.props.votes}
         </div>
 
         <div className="Joke-text">{this.props.text}</div>
